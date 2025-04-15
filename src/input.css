@@ -1,0 +1,134 @@
+@import "tailwindcss";
+@font-face {
+    font-family:'degular-semibold';
+    src: url('https://cdn.cmsfly.com/635bcad9b8a74e0091632998/degular-semibold-m1eBlC.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BG-400';
+    src: url('https://files.dorik.com/635bcad9b8a74e0091632998/bricolagegrotesque-variablefont_opsz,wdth,wght-XYP-xv.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BG-500';
+    src: url('https://cdn.cmsfly.com/635bcad9b8a74e0091632998/bricolagegrotesque-variablefont_opsz,wdth,wght-XYP-xv.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BG-600';
+    src: url('https://cdn.cmsfly.com/635bcad9b8a74e0091632998/bricolagegrotesque-variablefont_opsz,wdth,wght-XYP-xv.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BG-700';
+    src: url('https://cdn.cmsfly.com/635bcad9b8a74e0091632998/bricolagegrotesque-variablefont_opsz,wdth,wght-XYP-xv.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PS';
+    src: url('https://cdn.cmsfly.com/635bcad9b8a74e0091632998/polysansneutral-M4Y11o.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@theme {
+    /* FONTS */
+    --font-sans: -apple-system, system-ui, 'Segoe UI', Helvetica, Arial, sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji';
+    --font-bg-400: 'BG-400', sans-serif;
+    --font-bg-500: 'BG-500', sans-serif;
+    --font-bg-600: 'BG-600', sans-serif;
+    --font-bg-700: 'BG-700', sans-serif;
+    --font-degular-semibold: 'degular-semibold', sans-serif;
+    --font-ps: 'PS', sans-serif;
+    /* COLORS */
+    --color-dorik-1: #17134a;
+    --color-dorik-2: #45426e;
+    --color-dorik-3: #747192;
+    --color-dorik-4: #a2a1b7;
+    --color-dorik-5: #d1d0db;
+    --color-dorik-6: #27A6FE;
+    --color-dorik-7: #8C3BFC;
+    --color-dorik-8: #DE238E;
+    --color-dorik-9: #FFCC85;
+    --color-dorik-10: #eeebfa;
+    --color-dorik-11: #dad5ed;
+    --color-dorik-12: #b0a6e0;
+    --color-dorik-13: #877bd4;
+    --color-dorik-14: #5f54c7;
+    --color-dorik-15: #3a30ba;
+    --color-dorik-16: #231f94;
+    --color-dorik-17: #12126e;
+    --color-dorik-18: #080a47;
+    --color-dorik-19: #030521;
+    --color-dorik-20: #F1FAF7;
+    --color-dorik-21: rgba(8, 10, 71, 0.1);
+    --color-dorik-22: #FFFFFF;
+    --color-dorik-23: rgba(255, 255, 255, 0);
+    --color-dorik-24: #FFF9F3;
+    --color-dorik-25: #220B3E;
+    --color-dorik-26: #FFF8E0;
+    --color-dorik-27: #F6F6FC;
+    --color-dorik-28: #25D06A;
+    --color-dorik-29: #FCF2DE;
+    --color-dorik-30: rgba(255, 255, 255, 0.8);
+    --color-dorik-31: rgba(222, 35, 142, 0.07);
+    --gradient-1: linear-gradient(45deg, var(--color-dorik-7) 0%,var(--color-dorik-6) 99%);
+}
+
+@layer base {
+    * {
+        @apply box-border;
+    }
+    body {
+        @apply bg-white leading-normal lg:text-lg text-dorik-2 font-sans;
+    }
+
+    h1 {
+        @apply text-5xl md:text-[52px] lg:text-7xl leading-none font-bg-600 tracking-[-1.5px] text-dorik-1;
+    }
+
+    h2 {
+        @apply text-[40px] md:text-[60px] leading-none font-bg-500 tracking-[-1px] text-dorik-1;
+    }
+
+    h3 {
+        @apply text-4xl lg:text-[50px] leading-none font-bg-500 tracking-[-0.5px] text-dorik-1;
+    }
+
+    h4 {
+        @apply text-3xl lg:text-[38px] leading-[1.2] font-bg-600 text-dorik-1;
+    }
+
+    h5 {
+        @apply text-xl lg:text-2xl leading-[1.4] font-bg-600 text-dorik-1;
+    }
+
+    h6 {
+        @apply text-xl leading-[1.4] font-semibold text-dorik-1;
+    }
+
+    a {
+        @apply text-dorik-15;
+    }
+}
+
+.container {
+    @apply sm:w-[540px] md:w-[750px] lg:w-[1000px] xl:w-[1170px] px-[15px] mx-auto;
+}
