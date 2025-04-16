@@ -19,18 +19,18 @@
                         <img src="https://cdn.dorik.com/5e373b6c43a72a001f56dbf6/61a1f4035bfd7b0011fb92f9/images/logo-dark_jta933n2.svg" alt="Dorik">
                     </a>
                 </div>
-                <button class="cursor-pointer py-2 px-4 border border-[#808080] inline-flex items-center rounded-[5px] leading-[1.2] md:hidden text-black">
+                <button class="mobile-btn cursor-pointer py-2 px-4 border border-[#808080] inline-flex items-center rounded-[5px] leading-[1.2] md:hidden text-black">
                     <span class="mr-[5px]">
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-fw icon " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-testid="icon-test"><path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path></svg>
                     </span>
                     Menu
                 </button>
-                <div class="md:flex max-md:w-full hidden text-center shrink-0 md:shrink flex-col md:flex-row justify-end items-center content-end grow">
+                <div class="nav-menu md:flex max-md:w-full hidden text-center shrink-0 md:shrink flex-col md:flex-row justify-end items-center content-end grow">
                     <ul class="flex pt-[30px] md:pt-0 flex-col md:flex-row items-center justify-center mb-[30px] md:mb-0 md:mr-[30px] md:space-x-5 text-base leading-none font-medium grow">
-                        <li>
+                        <li class="leading-[27px]">
                             <a href="#" class="inline-flex text-dorik-1 max-md:mb-5">✨ Dorik AI</a>
                         </li>
-                        <li>
+                        <li class="relative group leading-[27px]">
                             <a href="#" class="inline-flex items-center text-dorik-1 max-md:mb-5">
                                 <span>
                                     Product
@@ -39,14 +39,49 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down" color="undefined"><polyline points="6 9 12 15 18 9"></polyline></svg>
                                 </span>
                             </a>
+                            <ul class="bg-white rounded-[5px] shadow-[0px_0px_0px_5px_#FFFFFF] absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 left-0 top-[calc(100%)] z-[99999] text-left flex flex-col transition duration-200 whitespace-nowrap">
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-base bg-white text-dorik-1 hover:bg-dorik-26 text-left">White-Label CMS</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-base bg-white text-dorik-1 hover:bg-dorik-26 text-left">Website Builder</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-base bg-white text-dorik-1 hover:bg-dorik-26 text-left">Blogging Platform</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-base bg-white text-dorik-1 hover:bg-dorik-26 text-left">Membership Sites</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-base bg-white text-dorik-1 hover:bg-dorik-26 text-left">Online Store</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-base bg-white text-dorik-1 hover:bg-dorik-26 text-left">SEO</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-base bg-white text-dorik-1 hover:bg-dorik-26 text-left">Airtable Integration</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-base bg-white text-dorik-1 hover:bg-dorik-26 text-left">Integrations</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-base bg-white text-dorik-1 hover:bg-dorik-26 text-left">UI Blocks</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-base bg-white text-dorik-1 hover:bg-dorik-26 text-left">AI Text Generator</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-base bg-white text-dorik-1 hover:bg-dorik-26 text-left">AI Image Generator</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
+                        <li class="leading-[27px]">
                             <a href="#" class="inline-flex text-dorik-1 max-md:mb-5">Templates</a>
                         </li>
-                        <li>
+                        <li class="leading-[27px]">
                             <a href="#" class="inline-flex text-dorik-1 max-md:mb-5">Pricing</a>
                         </li>
-                        <li>
+                        <li class="leading-[27px] relative group">
                             <a href="#" class="inline-flex items-center text-dorik-1">
                                 <span>
                                     Resources
@@ -55,6 +90,29 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down" color="undefined"><polyline points="6 9 12 15 18 9"></polyline></svg>
                                 </span>
                             </a>
+                            <ul class="bg-white rounded-[5px] shadow-[0px_0px_0px_5px_#FFFFFF] absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 left-0 top-[calc(100%)] z-[99999] text-left flex flex-col transition duration-200 whitespace-nowrap">
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-base bg-white text-dorik-1 hover:bg-dorik-26 text-left">Wall of Love</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-base bg-white text-dorik-1 hover:bg-dorik-26 text-left">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-base bg-white text-dorik-1 hover:bg-dorik-26 text-left">Success Stories</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-base bg-white text-dorik-1 hover:bg-dorik-26 text-left">Made in Dorik</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-base bg-white text-dorik-1 hover:bg-dorik-26 text-left">Documentation</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-base bg-white text-dorik-1 hover:bg-dorik-26 text-left">Community</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-base bg-white text-dorik-1 hover:bg-dorik-26 text-left">Video Tutorials</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
 
@@ -1289,5 +1347,15 @@
             </div>
         </div>
     </section>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.mobile-btn').click(function() {
+                $('.nav-menu').toggle();
+            })
+        });
+    </script>
 </body>
 </html>
